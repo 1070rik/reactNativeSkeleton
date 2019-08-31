@@ -3,33 +3,42 @@ import {
   createStackNavigator,
   createAppContainer,
   createMaterialTopTabNavigator,
-  createSwitchNavigator,
   MaterialTopTabBar,
 } from 'react-navigation';
-import {Text, SafeAreaView} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 
 //Styles
-import styles from '../Styles/NavigationStyles';
-import Colors from '../Themes/Main/Colors';
 
 //Screens
 import screens from './Screens';
 
 // Manifest of possible screens
-const HomeNavigator = createStackNavigator(
+const NavigatorOne = createStackNavigator(
   {
-    Home: {
-      screen: screens.Home,
+    Screen1: {
+      screen: screens.Screen1,
     },
   },
   {
-    initialRouteName: 'Home',
-    headerLayoutPreset: 'center',
-    defaultNavigationOptions: {
-      headerStyle: styles.header,
-      headerTitleStyle: styles.headerTitleStyles,
-      headerMode: 'none',
-      headerTitle: <Text>App</Text>,
+    initialRouteName: 'Screen1',
+    headerMode: 'none',
+    navigationOptions: {
+      headerVisible: false,
+    },
+  },
+);
+
+const NavigatorTwo = createStackNavigator(
+  {
+    Screen2: {
+      screen: screens.Screen2,
+    },
+  },
+  {
+    initialRouteName: 'Screen2',
+    headerMode: 'none',
+    navigationOptions: {
+      headerVisible: false,
     },
   },
 );
@@ -44,44 +53,27 @@ function SafeAreaMaterialTopTabBar(props) {
 
 const TabNavigator = createMaterialTopTabNavigator(
   {
-    Home: {
-      screen: HomeNavigator,
-      navigationOptions: {
-        tabBarIcon: ({tintColor}) => (
-          <Text style={{color: tintColor}}>Home</Text>
-        ),
-      },
+    Screen1: {
+      screen: NavigatorOne,
+    },
+    Screen2: {
+      screen: NavigatorTwo,
+    },
+    Screen3: {
+      screen: screens.Screen3,
     },
   },
   {
     tabBarComponent: SafeAreaMaterialTopTabBar,
-    swipeEnabled: false,
-    tabBarPosition: 'bottom',
     animationEnabled: true,
     optimizationsEnabled: true,
     lazy: true,
-    headerMode: 'none',
     tabBarOptions: {
-      showLabel: false,
-      activeTintColor: Colors.orange,
-      inactiveTintColor: '#000',
+      activeTintColor: '#000',
+      inactiveTintColor: '#2d2d2d',
       showIcon: true,
       style: {
-        backgroundColor: '#fff',
-        opacity: 1,
-        borderTopColor: Colors.borderColor,
-        borderTopWidth: 1,
-      },
-      iconStyle: {
-        opacity: 1,
-      },
-      tabStyle: {
-        opacity: 1,
-      },
-      indicatorStyle: {
-        display: 'none',
-        color: '#fff',
-        opacity: 0,
+        backgroundColor: '#ffdd00',
       },
     },
   },
