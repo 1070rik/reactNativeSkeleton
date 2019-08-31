@@ -18,6 +18,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* reactNativeSkeletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeSkeletonTests.m */; };
+		727DECCC231AC34700F3CFC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 727DECCB231AC34700F3CFC7 /* GoogleService-Info.plist */; };
 		8E536BF865F6E9BD6FC8ADB3 /* libPods-reactNativeSkeleton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB570CE74D55E24420C02A7 /* libPods-reactNativeSkeleton.a */; };
 		9FD6D07E31AD324E4A6D4121 /* libPods-reactNativeSkeleton-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2FD91597B4F991B521663 /* libPods-reactNativeSkeleton-tvOS.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		5227112E23160C977202F873 /* Pods-reactNativeSkeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeSkeleton.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeSkeleton/Pods-reactNativeSkeleton.debug.xcconfig"; sourceTree = "<group>"; };
 		57BD567BEC9C59439FC5D6E3 /* libPods-reactNativeSkeletonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeSkeletonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		655B10E932B134829A017522 /* Pods-reactNativeSkeletonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeSkeletonTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeSkeletonTests/Pods-reactNativeSkeletonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		727DECCB231AC34700F3CFC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82D82560946209A52B3BF607 /* Pods-reactNativeSkeleton-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeSkeleton-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeSkeleton-tvOSTests/Pods-reactNativeSkeleton-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8CDC009C3CCAA1D03AE6B73 /* libPods-reactNativeSkeleton-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeSkeleton-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB570CE74D55E24420C02A7 /* libPods-reactNativeSkeleton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeSkeleton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				727DECCB231AC34700F3CFC7 /* GoogleService-Info.plist */,
 			);
 			name = reactNativeSkeleton;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				727DECCC231AC34700F3CFC7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
